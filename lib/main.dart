@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_book/notes/Notes.dart';
+import 'package:flutter_book/tasks/Tasks.dart';
 import 'package:path_provider/path_provider.dart';
 import 'appointments/Appointments.dart';
 import 'utils.dart' as utils;
@@ -47,7 +48,7 @@ class FlutterBook extends StatelessWidget {
             ),
           ),
           body: TabBarView(
-              children: [Notes()]),
+              children: [Appointments(),Notes(), Tasks()]),
         ),
       ),
     );
